@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>iContacts | Connexion</title>
+        <style>
+            html {
+                font-family: 'Avenir Next';
+            }
+            .Connexion {
+                margin-top: 50vh;
+                transform: translateY(-50%);
+                text-align: center;
+            }
+            body {
+                overflow: hidden;
+            }
+            #fond {
+                position:absolute;
+                top:0;
+                left:0;
+            }
+            #fond,#fond img {
+                width:100%;
+                height:100%;
+            }
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: rgb(18, 70, 98);
+            }
+            a::after {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fond">
+            <img src="others/background.jpg" />
+
+        </div>
+        <div class="Connexion">
+            <form method="POST" action="index.html">
+                <p>
+                    <label>Votre adresse mail</label> : <input type="email" name="Addr" required />
+                </p>
+                <p>
+                    <label>Votre clé d'indentification</label> : <input type="text" name="Key" required/>
+                </p>
+                <input type="submit" value="Ok">
+            </form>
+            <p><a  href="resetIDENT.hmtl">J'ai oublié mes identifiants</a> <a href="create.html">Créer un compte</a></p>
+        </div>
+    </body>
+</html>
