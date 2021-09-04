@@ -1,4 +1,4 @@
-=
+
 #!-*- Encoding:Utf-8 -*-
 """
 main.py
