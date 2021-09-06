@@ -3,10 +3,8 @@
     <head>
         <meta charset="utf-8"/>
         <title>iContacts | Connexion</title>
+        <link href="{{ url_for('static', filename='styles/all.css') }}" rel="stylesheet"/>
         <style>
-            html {
-                font-family: 'Avenir Next';
-            }
             .Connexion {
                 margin-top: 50vh;
                 transform: translateY(-50%);
@@ -42,7 +40,7 @@
 
         </div>
         <div class="Connexion">
-            <form method="POST" action="index.html">
+            <form method="GET" action="/iContacts">
                 <p>
                     <label>Votre adresse mail</label> : <input type="email" name="Addr" required />
                 </p>
